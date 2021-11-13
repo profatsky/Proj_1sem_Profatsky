@@ -12,7 +12,7 @@ def solution(num):
 
 
 # Ввод данных
-a = input()
+a = input('Введите число: ')
 
 # Обработка исключений
 while type(a) != int:
