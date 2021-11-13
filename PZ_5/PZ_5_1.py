@@ -13,6 +13,7 @@ def solution(num):
 
 # Ввод данных
 a = input('Введите число: ')
+k = 0
 
 # Обработка исключений
 while type(a) != int:
@@ -24,7 +25,6 @@ while type(a) != int:
 
 
 # Обработка чисел
-k = 0
 while a > 0:
     a -= solution(a)
     k += 1
