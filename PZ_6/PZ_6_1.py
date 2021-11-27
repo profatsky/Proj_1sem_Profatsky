@@ -5,8 +5,8 @@ from random import randint
 
 # Ввод данных
 while True:
-    N, K, L = int(input('Введите размер списка: ')), int(input('Введите первое число: ')), \
-              int(input('Введите второе число: '))
+    N, K, L = int(input('Введите размер списка N: ')), int(input('Введите первое число K: ')), \
+              int(input('Введите второе число L: '))
     if 1 < K < L < N:
         break
     print('Не соблюдено условие 1 < K < L < N')

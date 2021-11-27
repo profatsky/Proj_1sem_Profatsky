@@ -14,4 +14,4 @@ for i in range(N):
     if my_list[i] not in my_list[:i]:
         amount += 1
 
-print(f'В списке {my_list} есть {amount} различных элементов')
+print(f'В списке {my_list} количество различных элементов составило {amount} ')
