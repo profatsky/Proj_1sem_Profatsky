@@ -4,13 +4,13 @@
 from random import randint
 
 # Генерация первого текстового файла с исходныи данными
-with open('input.txt', 'w') as inp:
+with open('input_task_1.txt', 'w') as inp:
     inp.write(" ".join([str(randint(-10, 10)) for i in range(10)]))
 
 # Генерация второго текстового файла
-with open('input.txt', 'r') as inp:  # открываем первый файл на чтение
+with open('input_task_1.txt', 'r') as inp:  # открываем первый файл на чтение
     input_text = inp.read()
-    with open('text.txt', 'w') as f:  # генерируем второй файл на запись
+    with open('output_task_1.txt', 'w') as f:  # генерируем второй файл на запись
         # Записываем строку с исходными данными
         f.writelines(f'Исходные данные: {input_text}\n')
         # Записываем строку с количеством элементов
@@ -18,8 +18,7 @@ with open('input.txt', 'r') as inp:  # открываем первый файл 
         # Записываем строку с суммой элементов
         f.writelines(f'Сумма элементов: {sum(map(int, input_text.split()))}\n')
 
-        n = int(input('Введите индекс элемента: '))
+        n = int(input('Введите индекс элемента (1 <= n <= 9): '))
         # Записываем строку с элементами до n-1, умноженнными на элемент n
-        f.writelines(f'Элементы до n-1 умножены на элемент n: {" ".join([str(int(i) * n) for i in input_text.split()[:n]])}')
-
-
+        f.writelines(
+            f'Элементы до n-1 умножены на элемент n: {" ".join([str(int(i) * n) for i in input_text.split()[:n]])}')
