@@ -2,15 +2,14 @@
 # к группе букв. Сформировать новый файл, в который поместить текст в стихотворной форме предварительно заменив символы
 # верхнего регистра на нижний.
 
-with open('text18-19.txt', 'r', encoding='UTF-8') as inp:
+# Открываем предложенный текстовый документ в режиме чтения
+with open('text18-19.txt', 'r') as inp:
     input_text = inp.read()
-    letters = input_text
-    symbols = ['.', ',', '!', '?', ' ', '-', '—', '\n']
-    for i in symbols:
-        letters = letters.replace(" ".join(i), "")
 
-print(f'Содерижимое текстового файла:\n{input_text}\n\nКоличество букв:\n{len(letters)}')
+# Выводим сожержимое текста и количество букв
+print(f'Содерижимое текстового файла:\n{input_text}\n\n'
+      f'Количество букв:\n{len([i for i in input_text if i.isalpha()])}')
 
-with open('output_task_2.txt', 'w') as out:
+# Создаем новый файл, помещая в него исходный текст, предварительно заменив символы верхнего регистра на нижний
+with open('text2_PZ_10_2.txt', 'w') as out:
     out.writelines(f'{input_text.lower()}')
-
