@@ -4,15 +4,15 @@
 from random import randint
 
 # Генерация первого текстового файла с исходныи данными
-with open('text1_PZ_10_1.txt', 'w') as inp:
+with open('text1_PZ_10_1.txt', 'w', encoding='UTF-8') as inp:
     seq = " ".join([str(randint(-10, 10)) for i in range(10)])
     seq = seq.replace('0', '1')
     inp.writelines(seq)
 
 # Генерация второго текстового файла
-with open('text1_PZ_10_1.txt', 'r') as inp:  # открываем первый файл на чтение
+with open('text1_PZ_10_1.txt', 'r', encoding='UTF-8') as inp:  # открываем первый файл на чтение
     input_text = inp.read()
-    with open('text2_PZ_10_1.txt', 'w') as f:  # генерируем второй файл на запись
+    with open('text2_PZ_10_1.txt', 'w', encoding='UTF-8') as f:  # генерируем второй файл на запись
         # Записываем строку с исходными данными
         f.writelines(f'Исходные данные: {input_text}\n')
         # Записываем строку с количеством элементов
