@@ -7,6 +7,15 @@
     <file url="file://$PROJECT_DIR$/PZ_13/PZ_13_2.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/PZ_14/PZ_14_1.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/PZ_8/PZ_8_1.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module/__init__.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module/doc/__init__.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module/doc/file_doc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module/doc/list_doc.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module/lessons_dict.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module/lessons_file.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module/lessons_list.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module/lessons_set.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/module/main.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tkinter_test.py" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
